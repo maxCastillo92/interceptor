@@ -23,8 +23,7 @@ export class AppComponent {
     this.obtenerSubscripcion();
   }
 
-  get obtenerData(){
-    console.log('Retorna obtener data');
+  get obtenerData():Observable<string>{
     return this._subjectReplay
   }
 
